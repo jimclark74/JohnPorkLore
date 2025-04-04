@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Pork, Marven Beak & Tim Cheese</title>
+    <style>
+        body {
+            background: repeating-linear-gradient(45deg, red, yellow, lime, cyan, blue, magenta, red 20px);
+            color: yellow;
+            font-family: Comic Sans MS, cursive;
+            text-align: center;
+            cursor: url('https://www.w3schools.com/html/monkey.cur'), auto;
+        }
+        .container {
+            padding: 20px;
+            border: 10px ridge cyan;
+            margin: 50px auto;
+            width: 80%;
+            background: lime;
+            box-shadow: 0 0 20px white;
+        }
+        marquee {
+            font-size: 30px;
+            font-weight: bold;
+            color: red;
+            text-shadow: 3px 3px black;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            border: 5px double black;
+            transform: rotate(10deg);
+            animation: spin 5s linear infinite;
+        }
+        .blink {
+            animation: blink 0.2s infinite alternate;
+        }
+        @keyframes blink {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+        .rainbow-text {
+            animation: rainbow 0.5s infinite alternate;
+        }
+        @keyframes rainbow {
+            0% { color: red; }
+            25% { color: blue; }
+            50% { color: green; }
+            75% { color: orange; }
+            100% { color: purple; }
+        }
+        .dancing-text {
+            animation: dance 0.2s infinite alternate;
+        }
+        @keyframes dance {
+            from { transform: rotate(-20deg); }
+            to { transform: rotate(20deg); }
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .spam {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 50px;
+            font-weight: bold;
+            background: red;
+            padding: 20px;
+            border: 5px solid black;
+            animation: spam-flash 0.1s infinite alternate;
+        }
+        @keyframes spam-flash {
+            from { background: red; color: yellow; }
+            to { background: yellow; color: red; }
+        }
+    </style>
+</head>
+<body>
+    <marquee direction="right" behavior="alternate" class="rainbow-text">WELCOME TO THE ULTIMATE 90s MEME PAGE!</marquee>
+    <div class="container">
+        <h1 class="dancing-text">John Pork is calling...</h1>
+        <img src="https://via.placeholder.com/200" alt="John Pork">
+        <p class="blink">Pick up or regret forever!</p>
+    </div>
+    <div class="container">
+        <h1 class="dancing-text">Marven Beak's wisdom</h1>
+        <img src="https://via.placeholder.com/200" alt="Marven Beak">
+        <p class="rainbow-text">"The beak knows all. Fear the beak!"</p>
+    </div>
+    <div class="container">
+        <h1 class="dancing-text">Tim Cheese approves!</h1>
+        <img src="https://via.placeholder.com/200" alt="Tim Cheese">
+        <p class="rainbow-text">"Cheese is the way. Believe in the curd!"</p>
+    </div>
+    <marquee direction="left" behavior="alternate" class="rainbow-text">90s Web Aesthetic - Best Experienced on Internet Explorer!</marquee>
+    <audio autoplay loop>
+        <source src="https://www.myinstants.com/media/sounds/windows-xp-error.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="spam">BUY BITCOIN NOW!!!</div>
+</body>
+</html>
